@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>ChocoClicker</title>
+</head>
+<body>
+  
+  <canvas id="myCanvas" width="1920" height="800"></canvas>
+
+    <section id="section-header">
+        <div id=container-header class="center grid">
+
+            
+            <h1 id="title">CHOCOCLICKER </h1>
+          
+          <div class="ecoute flex center2">
+            <img class="center2"src="asset/on.png"  id="master" alt="Logo off" onclick="muted()" >
+            <audio id="lecteur-audio" src="asset/audio/FF7 chocobo Theme.mp3" preload="auto"></audio>  
+          </div>
+        </div>
+    </section>
+
+    <!-- ************CURSEUR*********** -->
+
+    <div class="cursor"></div>
+
+    <section id="section-body">
+      
+      <!-- ************MENU******** -->
+        <div class="flex" id="contain-object">
+          <div><p id="gysahl-text">Gysahls: 0</p></div>
+          <div><p id="gils-text">Gils: 0</p></div>
+          <div><button class="button" onclick="Bakegysahl()"><img id="gysahl-img"src="asset/gysahl.png" alt="vegetable gysahl" ></button></div>
+          <div><button class="dyeing"><img id="auto" class="img" src="asset/img/choco.png"> </button><p>100g</p></div>
+          <div><button class="dyeing" id="dyeing" onclick="red_dyeing()"><img class="img" src="asset/img/teinture.png"></button><p>100g</p></div>
+          <div><img class="img" src="asset/img/couleur.png"><p>100g</p></div>
+        </div>
+        
+      
+        <!-- **********CHOCOBO-IMG*********** -->
+      <div id="contain-chocobo">
+          <button class="button" id="chocobo_1"><img id="chocobo" src="asset/chococobo.png" alt="chocobo" ></button>
+          <audio id="kwek" src="asset/audio/kwek.mp3"></audio>
+      </div>
+    </section>
+  
+  <!-- **************JS*************** -->
+
+    <script src="choco.js"></script>
+    <!-- <script src="script.js"></script> -->
+    
+</body>
+</html>
