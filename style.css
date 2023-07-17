@@ -159,10 +159,24 @@ button{
 }
 
 
+/* **************MENU********** */
 /* ******teinture****** */
 
 .img{
     width: 25%;
 }
 
+.img_1{
+    float:left
+}
 
+.p{
+    float:right
+}
+
+
+.table-container {
+    max-height: 500px; /* Ajustez la hauteur maximale selon vos besoins */
+    overflow-y: auto;
+  }
+  
